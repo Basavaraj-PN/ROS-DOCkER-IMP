@@ -1,0 +1,1 @@
+docker exec -it ros-docker-simple bash
