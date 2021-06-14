@@ -5,10 +5,10 @@ set -e
 PROJECT_ROOT="$(cd "$(dirname "$0")"; cd ..; pwd)"
 
 docker run -it \
-  --name ros-docker-simple \
+  --name ros-docker \
   --volume ${PROJECT_ROOT}/catkin_ws:/catkin_ws \
   --rm \
-  ros-docker-simple "$@"
+  ros-docker "$@"
 
 # Share a device with the Docker container by adding:
 #   --device=/dev/ttyUSB0 \
