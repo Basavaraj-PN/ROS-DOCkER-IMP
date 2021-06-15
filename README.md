@@ -4,8 +4,8 @@ A simple template project for [dockerizing](https://www.docker.com/) your [ROS](
 
 ```
 sudo apt-get install docker
-/script/build
-/script/run
+/docker/build
+/docker/run
 ```
 
 And that's it!
