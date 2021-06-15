@@ -1,4 +1,4 @@
-# ROS Docker Simple
+# ROS Docker 
 
 A simple template project for [dockerizing](https://www.docker.com/) your [ROS](http://www.ros.org/) code. Have your ROS project set up and running in 3 minutes by putting your catkin workspace in `catkin_ws` and running:
 
@@ -17,7 +17,7 @@ And that's it!
 This works with [any supported version of ROS](https://hub.docker.com/_/ros/), just edit the top line of the Dockerfile. For example, if you want ROS Kinetic:
 
 ```
-FROM ros:kinetic-ros-base
+FROM osrf/ros:melodic-desktop
 ```
 
 ### Can I use [my favourite IDE/editor] with this?
@@ -30,7 +30,7 @@ Inside the container, the `catkin_ws` folder will be mounted at root (`/catkin_w
 
 ### How do I install additional packages / dependencies / tools?
 
-Add your dependencies to the RUN command in the `Dockerfile` (this example installs `tmux` and `ros-kinetic-serial` packages using apt, you can add any additional commands or packages you like).
+Add your dependencies to the RUN command in the `Dockerfile` (this example installs `tmux` and `ros-melodic-serial` packages using apt, you can add any additional commands or packages you like).
 
 ### I need another terminal window in the container!
 
@@ -39,7 +39,7 @@ I recommend [tmux](https://robots.thoughtbot.com/a-tmux-crash-course) as an easy
 However, if you really want multiple terminal windows instead, you can open a new terminal window on your host computer and run:
 
 ```
-docker exec -it ros-docker-simple /bin/bash
+docker/into
 ```
 
 ### I want to run a different command on container startup!
