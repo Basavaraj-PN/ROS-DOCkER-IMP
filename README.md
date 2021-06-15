@@ -4,8 +4,10 @@ A simple template project for [dockerizing](https://www.docker.com/) your [ROS](
 
 ```
 sudo apt-get install docker
-/docker/build
-/docker/run
+/docker/build           # this will build the docker container
+/docker/run             # this cmd will run or start the docker container
+/docker/into            # to enter docker container in terminal 
+catkin_make             # to compile the catkin_ws
 ```
 
 And that's it!
