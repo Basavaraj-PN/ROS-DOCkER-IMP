@@ -7,7 +7,7 @@ sudo apt-get install docker    # install the docker
 /docker/build                  # this will build the docker container
 /docker/run                    # this will run or start the docker container
 /docker/into                   # to enter docker container in terminal 
-cd catkin_ws && catkin_make                    # to compile the catkin_ws
+catkin_make                    # to compile the catkin_ws
 ```
 
 And that's it!
