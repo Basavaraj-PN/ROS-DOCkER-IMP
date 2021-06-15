@@ -22,7 +22,7 @@ This works with [any supported version of ROS](https://hub.docker.com/_/ros/), j
 FROM osrf/ros:melodic-desktop
 ```
 
-### Can I use [my favourite IDE/editor] with this?
+### Can I use my favourite IDE/editor with this?
 
 Yup! The `catkin_ws` directory is mounted as a volume inside the container, so you can edit your code as usual, and it will be automatically synced with the container.
 
