@@ -3,11 +3,11 @@
 A simple template project for [dockerizing](https://www.docker.com/) your [ROS](http://www.ros.org/) code. Have your ROS project set up and running in 3 minutes by putting your catkin workspace in `catkin_ws` and running:
 
 ```
-sudo apt-get install docker
-/docker/build           # this will build the docker container
-/docker/run             # this cmd will run or start the docker container
-/docker/into            # to enter docker container in terminal 
-catkin_make             # to compile the catkin_ws
+sudo apt-get install docker    # install the docker
+/docker/build                  # this will build the docker container
+/docker/run                    # this will run or start the docker container
+/docker/into                   # to enter docker container in terminal 
+catkin_make                    # to compile the catkin_ws
 ```
 
 And that's it!
