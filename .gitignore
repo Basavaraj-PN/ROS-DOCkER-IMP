@@ -2,6 +2,7 @@
 
 ### ROS ###
 build/
+devel/
 bin/
 lib/
 msg_gen/
