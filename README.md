@@ -14,7 +14,7 @@ And that's it!
 
 ### How can I use a different version of ROS?
 
-This works with [any supported version of ROS](https://hub.docker.com/_/ros/), just edit the top line of the Dockerfile. For example, if you want ROS Kinetic:
+This works with [any supported version of ROS](https://hub.docker.com/_/ros/), just edit the top line of the Dockerfile. For example, if you want ROS Melodic:
 
 ```
 FROM osrf/ros:melodic-desktop
@@ -26,7 +26,7 @@ Yup! The `catkin_ws` directory is mounted as a volume inside the container, so y
 
 ### Where is my `catkin_ws` workspace mounted inside the container?
 
-Inside the container, the `catkin_ws` folder will be mounted at root (`/catkin_ws`). 
+Inside the container, the `catkin_ws` folder will be mounted at root (`/ros-docker/catkin_ws`). 
 
 ### How do I install additional packages / dependencies / tools?
 
