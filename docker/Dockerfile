@@ -4,7 +4,7 @@ ARG CATKIN_WS=/catkin_ws
 ENV CATKIN_WS /catkin_ws
 
 
-# install ros tutorials packages
+# install deps
 RUN apt-get update && apt-get install -y --no-install-recommends \
     tmux \
     ros-melodic-serial \
