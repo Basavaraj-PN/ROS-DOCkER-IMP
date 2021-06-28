@@ -61,27 +61,3 @@ Edit `script/run` and add the line `--device=/dev/ttyUSB0 \` (changing the `/dev
 
 The `docker-compose` tool is the standard way to run multiple containers together: https://docs.docker.com/compose/overview/
 
-### Running the scripts gives me a `permission denied` error!
-
-Is it this one?
-
-```
-docker: Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post http://%2Fvar%2Frun%2Fdocker.sock/v1.26/containers/create: dial unix /var/run/docker.sock: connect: permission denied.
-```
-
-Reason: your user does not have privileges to run Docker. Put your user into the `docker` group or run with `sudo`.
-
-### It gives me a `/ros_entrypoint.sh: line 6: (...): No such file or directory` error!
-
-Instead of giving it a command like this:
-
-```
-script/run "cd /tmp/ && ls"
-```
-
-Try this:
-
-```
-script/run sh -c "cd /tmp/ && ls"
-```
-# ROS-ON-DOCKER
