@@ -91,17 +91,10 @@ class Basavaraj {
    * published from the fluxauto stack to Simian 
    */
   // Actuation
-  ros::Subscriber throttle_percent_subscriber_;
-  const std::string kThrottlePercentTopic = "/actuate/throttle_percent";
-  void ThrottlePercentSubscriberCallback(const std_msgs::Float32::ConstPtr& msg);
+  ros::Subscriber test_topic_subscriber_;
+  const std::string kTestTopicSubscriber = "/test/topic";
+  void TestTopicSubscriberCallback(const std_msgs::Float32::ConstPtr& msg);
 
-  ros::Subscriber brakes_percent_subscriber_;
-  const std::string kBrakesPercentTopic = "/actuate/brakes_percent";
-  void BrakesPercentSubscriberCallback(const std_msgs::Float32::ConstPtr& msg);
-
-  ros::Subscriber steering_angle_subscriber_;
-  const std::string kSteeringAngleTopic = "/actuate/steering_angle";
-  void SteeringAngleSubscriberCallback(const std_msgs::Float32::ConstPtr& msg);
 
 
   /*******************************************************************
