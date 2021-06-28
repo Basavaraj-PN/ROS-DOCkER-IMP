@@ -22,10 +22,7 @@ int main(int argc, char **argv)
   process.Initialize();
   process.PublisherSetup();
   process.SubscriberSetup();
-
-
   ros::Rate loop_rate(10);
-
 
   while (ros::ok())
   {

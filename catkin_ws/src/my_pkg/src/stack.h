@@ -3,7 +3,6 @@
 #include <memory>
 
 #include <ros/ros.h>
-#include <std_msgs/String.h>
 #include <std_msgs/Float32.h>
 #include <rosgraph_msgs/Clock.h>
 #include <nav_msgs/Path.h>
@@ -14,6 +13,7 @@
 #include <geometry_msgs/Pose.h>
 #include <geometry_msgs/Point32.h>
 #include <geometry_msgs/Polygon.h>
+#include <std_msgs/String.h>
 #include "third_party/subprocess/subprocess.hpp"
 
 
@@ -23,6 +23,8 @@ class Basavaraj {
 
 
   int32_t Initialize() ;
+
+  int32_t setup();
 
   int32_t PublisherSetup();
 
@@ -46,7 +48,7 @@ class Basavaraj {
 
 
   // verison string.
-  const std::string kStackVersion_ = "V1";
+  const std::string kStackVersion_ = "v1";
 
   // roscore process.
   std::unique_ptr<subprocess::Popen> roscore_process_;
@@ -68,6 +70,8 @@ class Basavaraj {
   // Clock
   rosgraph_msgs::Clock::ConstPtr clock_;
 
+  //Stack version
+  std_msgs::String stack_version_;
  //Ros time
   ros::Time stamp_;
 

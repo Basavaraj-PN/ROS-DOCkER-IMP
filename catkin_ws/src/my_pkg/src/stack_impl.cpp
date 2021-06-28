@@ -25,7 +25,9 @@ int32_t Basavaraj::Initialize(){
   return SUCCESS_RETURN_CODE;
 }
 
-
+int32_t setup(){
+	return SUCCESS_RETURN_CODE;
+}
 
 int32_t Basavaraj::PublisherSetup(){
 	    stack_version_publisher_ = node_->advertise<std_msgs::String>(
@@ -40,14 +42,12 @@ int32_t Basavaraj::SubscriberSetup(){
 }
 
 int32_t Basavaraj::CallSuscribers(){
-
-
 	return SUCCESS_RETURN_CODE;
 }
 
 int32_t Basavaraj::CallPublisher(){
-
-
+  stack_version_.data = "asd";
+	stack_version_publisher_.publish(stack_version_);
 	return SUCCESS_RETURN_CODE;
 }
 
@@ -64,6 +64,8 @@ int32_t SetRate(){
 
 
 
+
+// kill roscore, rosnode
 int32_t Basavaraj::ProcessTeardown() {
   printf("Process killed..()\n");
   fflush(stdout);
@@ -76,6 +78,8 @@ int32_t Basavaraj::ProcessTeardown() {
 
   return SUCCESS_RETURN_CODE;
 }
+
+//implementation
 
 
 
