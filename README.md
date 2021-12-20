@@ -7,7 +7,7 @@ sudo apt-get install docker    # install the docker
 git clone https://github.com/Basavaraj-PN/ROS-ON-DOCKER.git    #clone the repo
 docker/build                  # this will build the docker container
 docker/run                    # this will run or start the docker container
-/docker/into                   # to enter docker container in terminal 
+docker/into                   # to enter docker container in terminal 
 catkin_make                    # to compile the catkin_ws
 ```
 
@@ -37,7 +37,7 @@ Add your dependencies to the RUN command in the `Dockerfile` (this example insta
 
 ### I need another terminal window in the container!
 
-I recommend [tmux](https://robots.thoughtbot.com/a-tmux-crash-course) as an easy way to manage multiple shells in ROS.
+I recommend [tmux](http/docker/build s://robots.thoughtbot.com/a-tmux-crash-course) as an easy way to manage multiple shells in ROS.
 
 However, if you really want multiple terminal windows instead, you can open a new terminal window on your host computer and run:
 
