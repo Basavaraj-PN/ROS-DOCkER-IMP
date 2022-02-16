@@ -5,9 +5,9 @@ A simple template project for [dockerizing](https://www.docker.com/) your [ROS](
 ```
 sudo apt-get install docker    # install the docker
 git clone https://github.com/Basavaraj-PN/ROS-ON-DOCKER.git    #clone the repo
-/docker/build                  # this will build the docker container
-/docker/run                    # this will run or start the docker container
-/docker/into                   # to enter docker container in terminal 
+docker/build                  # this will build the docker container
+docker/run                    # this will run or start the docker container
+docker/into                   # to enter docker container in terminal 
 catkin_make                    # to compile the catkin_ws
 ```
 
