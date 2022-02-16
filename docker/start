@@ -8,6 +8,7 @@ docker run -id \
  --name ros-docker \
  --volume ${PROJECT_ROOT}/catkin_ws:/catkin_ws \
  --rm \
+ --net=host\
  ros-docker "$@"
 
 # Share a device with the Docker container by adding:
